@@ -2,13 +2,32 @@
 
 This is a command-line based email client implemented in Java. The email client allows you to manage two types of recipients: official and personal. You can add recipients, send emails, and manage birthday greetings for recipients. What sets this application apart is its multithreaded capability for sending birthday greetings in the background. Here's how to use the email client:
 
+## Dependencies
+
+This application relies on the following libraries:
+
+- `mail.jar`
+
+- `activation.jar`
+
+    You can download the `mail.jar` & `activation.jar` from the following link: [download these JAR files](https://static.javatpoint.com/src/mail/mailactivation.zip)
+
+Make sure to add both JAR files to your project to enable the required functionality.
+
+
 ## Getting Started
 
 To run the email client, follow these steps:
 
 1\. Clone this GitHub repository to your local machine.
+2\. Load JAR files.
 
-2\. Compile the Java code.
+```shell
+
+Set classpath=mail.jar;activation.jar;.;
+
+```
+3\. Compile the Java code.
 
 ```shell
 
@@ -23,19 +42,6 @@ javac App.java
 java App
 
 ```
-## Dependencies
-
-This application relies on the following libraries:
-
-- `javax.mail` package for email functionality. You will need to include the `javax.mail.jar` in your project's classpath.
-
-    You can download the `javax.mail.jar` from the following link: [javax.mail.jar](link-to-javax.mail.jar)
-
-- `activation` library for additional functionality. You will need to include the `activation.jar` in your project's classpath.
-
-    You can download the `activation.jar` from the following link: [activation.jar](link-to-activation.jar)
-
-Make sure to add both JAR files to your project to enable the required functionality.
 
 
 ## Features
